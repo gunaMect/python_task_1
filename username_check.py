@@ -1,5 +1,5 @@
 def validate_user_name(str):
-    print("Username provided inside the function is: {}".format(str))
+    # print("Username provided inside the function is: {}".format(str))
     return_val = True
     try:
         countOfAt = str.count("@")
@@ -18,7 +18,7 @@ def validate_user_name(str):
             print("Provide User name starting with characters[a-z, A-Z]")
             return return_val
 
-        # Returns 0 if username is proper else 1 is returned
+        # Returns True if username is proper else False is returned
         return return_val
     except:
         return_val = False

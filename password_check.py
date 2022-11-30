@@ -2,7 +2,7 @@
 def validate_password(passwd):
     SpecialSym = "~`!@#$%^&*()_-+={[}]|\:;\"'<,>.?/"
     return_val = True
-    print("\nPassword provided inside the function is: {}".format(passwd))
+    # print("\nPassword provided inside the function is: {}".format(passwd))
     if not any(char in SpecialSym for char in passwd):
         print('\nPassword should have at least one of the special symbols')
         return_val = False
